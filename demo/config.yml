@@ -1,0 +1,649 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/daniel/Development/github.com/ConsenSys/Legions/demo
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 190
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 50
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 467
+    content: "\e]0;daniel@cola:~/Development/github.com/ConsenSys/Legions/demo\a[daniel@cola demo]$ "
+  - delay: 10364
+    content: .
+  - delay: 120
+    content: ' '
+  - delay: 384
+    content: .
+  - delay: 32
+    content: /
+  - delay: 168
+    content: v
+  - delay: 96
+    content: e
+  - delay: 208
+    content: "\a"
+  - delay: 512
+    content: "\b\e[K"
+  - delay: 136
+    content: "\b\e[K"
+  - delay: 136
+    content: "\b\e[K"
+  - delay: 103
+    content: "\b\e[K"
+  - delay: 281
+    content: .
+  - delay: 136
+    content: .
+  - delay: 112
+    content: /
+  - delay: 200
+    content: v
+  - delay: 72
+    content: e
+  - delay: 232
+    content: nv/
+  - delay: 1104
+    content: b
+  - delay: 208
+    content: in/
+  - delay: 520
+    content: a
+  - delay: 88
+    content: c
+  - delay: 200
+    content: t
+  - delay: 280
+    content: "\aivate"
+  - delay: 537
+    content: "\r\n\e]0;daniel@cola:~/Development/github.com/ConsenSys/Legions/demo\a(venv) [daniel@cola demo]$ "
+  - delay: 14160
+    content: l
+  - delay: 39
+    content: e
+  - delay: 169
+    content: g
+  - delay: 127
+    content: i
+  - delay: 73
+    content: o
+  - delay: 159
+    content: 'n'
+  - delay: 73
+    content: s
+  - delay: 392
+    content: "\r\n"
+  - delay: 908
+    content: "Logging to /tmp/legions-hnjkc3dd\r\n"
+  - delay: 32
+    content: "\e[?1l\e[6n"
+  - delay: 9
+    content: "\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0m \e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0m                                                                                                                                                                                             \r\e[189C \r\e[7A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 11
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0;38;5;231;48;5;234mLegions  Verbose   \e[0;38;5;231;48;5;19mOFF\e[0;38;5;231;48;5;234m                                                                                                                                                                       \r\e[189C \r\e[8A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 995
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 143
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mg\e[0;38;5;241metnodeinfo\e[0m \e[0m\r\r\n\e[9C\e[0;38;5;16;48;5;250m getnodeinfo \e[0;38;5;16;48;5;246m Prints information about the node (run setnode before this) \e[0;38;5;16;48;5;238m \e[A\e[75D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 158
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197me\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[9C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[10C\e[0;38;5;16;48;5;250m getnodeinfo \e[0;38;5;16;48;5;246m Prints information about the node (run setnode before this) \e[0;38;5;16;48;5;238m \e[A\e[75D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 83
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mt\e[0m\r\r\n\e[10C\e[0m \e[0;38;5;16;48;5;250m getnodeinfo \e[0;38;5;16;48;5;246m Prints information about the node (run setnode before this) \e[0;38;5;16;48;5;238m \e[A\e[75D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 613
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 24
+    content: "\e[?25l\e[?7l\e[3D\e[0;38;5;215mgetnodeinfo\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[18C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 577
+    content: "\e[?25l\e[?7l\e[19D\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0;38;5;215mgetnodeinfo\e[0m                                                                                                                                                                          \r\e[189C \r\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004l"
+  - delay: 601
+    content: "\e[37mWeb3 API Version: 5.4.0\e[0m\r\n\e[37mconnected to: https://mainnet.infura.io/v3/c3914c0859de473b9edcd6f723b4ea69\e[0m\r\n"
+  - delay: 164
+    content: "\e[32mVersion: Geth/v1.9.9-omnibus-e320ae4c-20191206/linux-amd64/go1.13.4\e[0m\r\n----------------------------------------------------------------\e[0m\r\n"
+  - delay: 155
+    content: "\e[32mLast Block Number: 9364676\e[0m\r\n"
+  - delay: 332
+    content: "\e[32mChain: Ethereum Mainnet (ChainID: 1)\e[0m\r\n"
+  - delay: 144
+    content: "\e[32mProtocol Version: 64\e[0m\r\n"
+  - delay: 141
+    content: "\e[32mIs Listening: True\e[0m\r\n"
+  - delay: 140
+    content: "\e[32mPeer Count: 100\e[0m\r\n"
+  - delay: 148
+    content: "\e[32mIs Syncing: False\e[0m\r\n"
+  - delay: 137
+    content: "\e[32mIs Mining: False\e[0m\r\n"
+  - delay: 146
+    content: "\e[32mHash Rate: 0\e[0m\r\n"
+  - delay: 188
+    content: "\e[32mGas Price: 1000000000\e[0m\r\n----------------------------------------------------------------\e[0m\r\n"
+  - delay: 155
+    content: "\e[31mCoinbase not available: {'code': -32601, 'message': 'The method eth_coinbase does not exist/is not available'}\e[0m\r\n\e[32mAccounts\e[0m\r\n"
+  - delay: 140
+    content: "\e[?1l\e[6n\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0m \e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0m                                                                                                                                                                                             \r\e[189C \r\e[7A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 6
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0;38;5;231;48;5;234mLegions  Verbose   \e[0;38;5;231;48;5;19mOFF\e[0;38;5;231;48;5;234m                                                                                                                                                                       \r\e[189C \r\e[8A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1001
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1001
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 428
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197ms\e[0;38;5;241methost host=\"http://localhost:7545\"\e[0m \e[36D\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[0m\r\r\n\e[9C\e[0;38;5;16;48;5;250m sethost \e[0;38;5;16;48;5;246m Setup the Web3 connection (RPC, IPC, HTTP) - This should be the first step \e[0;38;5;16;48;5;238m \e[A\e[86D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 34
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197me\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[9C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[10C\e[0;38;5;16;48;5;250m sethost \e[0;38;5;16;48;5;246m Setup the Web3 connection (RPC, IPC, HTTP) - This should be the first step \e[0;38;5;16;48;5;238m \e[A\e[86D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 67
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mt\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[10C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[11C\e[0;38;5;16;48;5;250m sethost \e[0;38;5;16;48;5;246m Setup the Web3 connection (RPC, IPC, HTTP) - This should be the first step \e[0;38;5;16;48;5;238m \e[A\e[86D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 305
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mh\e[0m\r\r\n\e[11C\e[0m \e[0;38;5;16;48;5;250m sethost \e[0;38;5;16;48;5;246m Setup the Web3 co\e[Cnection (RPC, IPC, H\e[CTP) - This should be the first step \e[0;38;5;16;48;5;238m \e[A\e[86D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 78
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mo\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[12C\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[0m\r\r\n\e[13C\e[0;38;5;16;48;5;250m sethost \e[0;38;5;16;48;5;246m Setup the Web3 connection (RPC, IPC, HTTP) - This should be the first step \e[0;38;5;16;48;5;238m \e[A\e[86D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 36
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197ms\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[13C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[14C\e[0;38;5;16;48;5;250m sethost \e[0;38;5;16;48;5;246m Setup the Web3 connection (RPC, IPC, HTTP) - This should be the first step \e[0;38;5;16;48;5;238m \e[A\e[86D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 27
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 51
+    content: "\e[?25l\e[?7l\e[6D\e[0;38;5;215msethost\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[14C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 564
+    content: "\e[?25l\e[?7l\e[0;38;5;231m \e[0m\r\r\n\e[16C\e[0;38;5;16;48;5;250m host= \e[0;38;5;16;48;5;246m [str, required] Address of the RPC Node \e[0;38;5;16;48;5;238m \e[A\e[49D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 174
+    content: "\e[?25l\e[?7l\e[0;38;5;231mh\e[0m\r\r\n\e[16C\e[0m \e[0;38;5;16;48;5;250m host= \e[0;38;5;16;48;5;246m [str, required] A\e[Cdre\e[Cs of the RPC Node \e[0;38;5;16;48;5;238m \e[A\e[49D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 81
+    content: "\e[?25l\e[?7l\e[0;38;5;231mo\e[0m\r\r\n\e[17C\e[0m \e[0;38;5;16;48;5;250m host= \e[0;38;5;16;48;5;246m [str, required] A\e[Cdre\e[Cs of the RPC Node \e[0;38;5;16;48;5;238m \e[A\e[49D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 23
+    content: "\e[?25l\e[?7l\e[0;38;5;231ms\e[0m\r\r\n\e[18C\e[0m \e[0;38;5;16;48;5;250m host= \e[0;38;5;16;48;5;246m [str, required] A\e[Cdre\e[Cs of the RPC Node \e[0;38;5;16;48;5;238m \e[A\e[49D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 97
+    content: "\e[?25l\e[?7l\e[0;38;5;231mt\e[0m\r\r\n\e[19C\e[0m \e[0;38;5;16;48;5;250m host= \e[0;38;5;16;48;5;246m [str, required] A\e[Cdre\e[Cs of the RPC Node \e[0;38;5;16;48;5;238m \e[A\e[49D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 11
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1004
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 997
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 148
+    content: "\e[?25l\e[?7l\e[4D\e[0;38;5;231mhost\e[0;38;5;197m=\e[0;38;5;186m\"http://localhost:7545\"\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[43C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 856
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 483
+    content: "\e[?25l\e[?7l\e[44D\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0;38;5;215msethost\e[0;38;5;231m \e[0;38;5;231mhost\e[0;38;5;197m=\e[0;38;5;186m\"http://localhost:7545\"\e[0m                                                                                                                                                 \r\e[189C \r\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004l\e[33mInput: http://localhost:7545\e[0m\r\n\e[33mVerbose? 0\e[0m\r\n\e[31mWeb3 API Version: 5.4.0\e[0m\r\n\e[31mCannot connect to: http://localhost:7545 \e[0m\r\n\e[?1l\e[6n\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0m \e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0m                                                                                                                                                                                             \r\e[189C \r\e[7A\e[8C\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0;38;5;231;48;5;234mLegions  Verbose   \e[0;38;5;231;48;5;19mOFF\e[0;38;5;231;48;5;234m                                                                                                                                                                       \r\e[189C \r\e[8A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1005
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1000
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1001
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1001
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 999
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1003
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1000
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1003
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1004
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1001
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 999
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1005
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1000
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 654
+    content: "\e[?25l\e[?7l\e[0;38;5;215msethost\e[0;38;5;231m \e[0;38;5;231mhost\e[0;38;5;197m=\e[0;38;5;186m\"http://localhost:7545\"\e[0m \b\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 348
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 31
+    content: "\e[?25l\e[?7l\e[36D\e[0;38;5;215mg\e[2Cn\e[Cdeinfo\e[0m \e[0m\e[K\b\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 413
+    content: "\e[?25l\e[?7l\e[19D\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0;38;5;215mgetnodeinfo\e[0m                                                                                                                                                                          \r\e[189C \r\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004l"
+  - delay: 11
+    content: "\e[37mWeb3 API Version: 5.4.0\e[0m\r\n\e[37mconnected to: http://localhost:7545\e[0m\r\n"
+  - delay: 6
+    content: "\e[32mVersion: EthereumJS TestRPC/v2.8.0/ethereum-js\e[0m\r\n----------------------------------------------------------------\e[0m\r\n\e[32mLast Block Number: 0\e[0m\r\n"
+  - delay: 9
+    content: "\e[32mChain: None (ChainID: 1337)\e[0m\r\n\e[32mProtocol Version: 99\e[0m\r\n\e[32mIs Listening: True\e[0m\r\n\e[32mPeer Count: 0\e[0m\r\n"
+  - delay: 5
+    content: "\e[32mIs Syncing: False\e[0m\r\n\e[32mIs Mining: True\e[0m\r\n\e[32mHash Rate: 0\e[0m\r\n\e[32mGas Price: 1\e[0m\r\n----------------------------------------------------------------\e[0m\r\n"
+  - delay: 12
+    content: "\e[32mCoinbase Account: 0xd802f1f519E0F871C6aD07689C09F305F26b1b4a\e[0m\r\n\e[32mAccounts\e[0m\r\n"
+  - delay: 8
+    content: "\e[32m- 0xd802f1f519E0F871C6aD07689C09F305F26b1b4a\e[0m\r\n\e[32m- 0x14a7bc9a095e8cc4c7CC3BE8F1a7F3702A942538\e[0m\r\n\e[32m- 0x1790A965472dB702d042AB3D5CAa35bC34133293\e[0m\r\n\e[32m- 0xf0ba180BDE68d5cF6c885977DC85f591CBB255a9\e[0m\r\n\e[32m- 0x269734969962453E11E12027642180a9f26b67E4\e[0m\r\n\e[32m- 0x605489943C49F294262DDCBDC8d2BC181D452084\e[0m\r\n\e[32m- 0x5486d7345809d7b68f3aAE773FD67BB2f0c388A3\e[0m\r\n\e[32m- 0xd2706e9dCe4CD06A64E4556254C800e070f42644\e[0m\r\n\e[32m- 0x98ffbeE4A7cf2E47FA343b09E4Bae737e7BcD535\e[0m\r\n\e[32m- 0xf12286180309C4fb7A644f4F08a294a9c2AA23B4\e[0m\r\n\e[?1l\e[6n\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0m \e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0m                                                                                                                                                                                             \r\e[189C \r\e[7A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0;38;5;231;48;5;234mLegions  Verbose   \e[0;38;5;231;48;5;19mOFF\e[0;38;5;231;48;5;234m                                                                                                                                                                       \r\e[189C \r\e[8A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1003
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 998
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1005
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1001
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1003
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1001
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1003
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1000
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 254
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mh\e[0;38;5;241melp\e[0m \e[0m\r\r\n\e[9C\e[0;38;5;16;48;5;250m help  \e[0;38;5;16;48;5;246m Prints help about all the commands \e[0;38;5;16;48;5;238m \e[A\e[44D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 59
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197me\e[0m\r\r\n\e[9C\e[0m \e[0;38;5;16;48;5;250m help\e[C \e[0;38;5;16;48;5;246m Prints help about a\e[Cl the co\e[Cmands \e[0;38;5;16;48;5;238m \e[A\e[44D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 262
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mk\e[0m \e[0m\e[K\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[10C\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 424
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 63
+    content: "\e[?25l\e[?7l\b\e[0m \e[0m\e[K\b\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 252
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197ml\e[0;38;5;241mp\e[0m \e[2D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 9
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[11C\e[0;38;5;16;48;5;250m help  \e[0;38;5;16;48;5;246m Prints help about all the commands \e[0;38;5;16;48;5;238m \e[A\e[44D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 38
+    content: "\e[?25l\e[?7l\e[3D\e[0;38;5;34mhelp\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[11C\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 215
+    content: "\e[?25l\e[?7l\e[12D\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> help\e[0m                                                                                                                                                                                 \r\e[189C \r\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004l+-------------+----------------------------------------------------------------------------+\r\n| Command     | Description                                                                |\r\n+-------------+----------------------------------------------------------------------------+\r\n| \e[35mconversions\e[0m | Conversions possible to do with Web3                                       |\r\n| \e[35mgetnodeinfo\e[0m | Prints information about the node (run setnode before this)                |\r\n| \e[35minvestigate\e[0m | Investigate further in the node (e.g. check if accounts are unlocked, etc) |\r\n| \e[35mquery\e[0m       | Query Blockchain (Storage, balance, etc)                                   |\r\n| \e[35msethost\e[0m     | Setup the Web3 connection (RPC, IPC, HTTP) - This should be the first step |\r\n| \e[35mversion\e[0m     | Print Versions (If connected to a node it will print the host version too) |\r\n+-------------+----------------------------------------------------------------------------+\r\n\e[33mBuilt-in Commands\e[0m\r\n+----------+------------------------------------------------------------------+\r\n| Command  | Description                                                      |\r\n+----------+------------------------------------------------------------------+\r\n| \e[35m:verbose\e[0m | Prints or changes verbosity level, accepts integer or True/False |\r\n| \e[35m?\e[0m        | Prints help about all the commands                               |\r\n| \e[35mconnect\e[0m  | Start the interactive mode                                       |\r\n| \e[35mexit\e[0m     | Exits the program                                                |\r\n| \e[35mhelp\e[0m     | Prints help about all the commands                               |\r\n| \e[35mq\e[0m        | Exits the program                                                |\r\n| \e[35mquit\e[0m     | Exits the program                                                |\r\n+----------+------------------------------------------------------------------+\r\n\e[?1l\e[6n\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0m \e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0m                                                                                                                                                                                             \r\e[189C \r\e[7A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 10
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0;38;5;231;48;5;234mLegions  Verbose   \e[0;38;5;231;48;5;19mOFF\e[0;38;5;231;48;5;234m                                                                                                                                                                       \r\e[189C \r\e[8A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 996
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1000
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1003
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1001
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 910
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mi\e[0;38;5;241mnvestigate admin\e[0m \e[0m\r\r\n\e[9C\e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if accounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 66
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mn\e[0m\r\r\n\e[9C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 23
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 60
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mv\e[0m\r\r\n\e[10C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 68
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197me\e[0m\r\r\n\e[11C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 321
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197ms\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[12C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 6
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[13C\e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if accounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 85
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mt\e[0m\r\r\n\e[13C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 122
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mi\e[0m\r\r\n\e[14C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 91
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mg\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[15C\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[0m\r\r\n\e[16C\e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if accounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 63
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197ma\e[0m\r\r\n\e[16C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 158
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mt\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[17C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 6
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[18C\e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if accounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 18
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 47
+    content: "\e[?25l\e[?7l\e[10D\e[0;38;5;215minvestigate\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[18C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 392
+    content: "\e[?25l\e[?7l\e[0;38;5;231m \e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 8
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[20C\e[0;38;5;16;48;5;250m accounts \e[0;38;5;16;48;5;246m Investigate accounts (e.g. check if accounts are unlocked, etc)        \e[0;38;5;16;48;5;238m \e[0m\r\r\n\e[20C\e[0;38;5;16;48;5;250m admin    \e[0;38;5;16;48;5;246m Investigate accounts (e.g. functionalities under the admin_ namespace) \e[0;38;5;16;48;5;238m \e[0m\r\r\n\e[20C\e[0;38;5;16;48;5;250m sign     \e[0;38;5;16;48;5;246m Investigate signature functionalities                                  \e[0;38;5;16;48;5;238m \e[3A\e[83D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 109
+    content: "\e[?25l\e[?7l\e[0;38;5;231ma\e[0m\r\r\n\e[20C\e[0m \e[0;38;5;16;48;5;250m a\e[Ccounts \e[0;38;5;16;48;5;246m Investigate a\e[Ccounts (e.g. check if a\e[Ccounts are unlocked, etc)\e[7C \e[0;38;5;16;48;5;238m \e[0m\r\r\n\e[20C\e[0m \e[0;38;5;16;48;5;250m admin    \e[0;38;5;16;48;5;246m Investigate accounts (e.g. functionalities under the admin_ namespace) \e[0;38;5;16;48;5;238m \e[0m\r\r\n\e[C\e[0m\e[K\e[3A\e[20C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 77
+    content: "\e[?25l\e[?7l\e[0;38;5;231md\e[0m\r\r\n\e[C\e[0m\e[K\e[0m\r\r\n\e[C\e[0m\e[K\e[2A\e[21C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 8
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[22C\e[0;38;5;16;48;5;250m admin \e[0;38;5;16;48;5;246m Investigate accounts (e.g. functionalities under the admin_ namespace) \e[0;38;5;16;48;5;238m \e[A\e[80D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 29
+    content: "\e[?25l\e[?7l\e[0;38;5;231mm\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[22C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[23C\e[0;38;5;16;48;5;250m admin \e[0;38;5;16;48;5;246m Investigate accounts (e.g. functionalities under the admin_ namespace) \e[0;38;5;16;48;5;238m \e[A\e[80D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 57
+    content: "\e[?25l\e[?7l\e[0;38;5;231mi\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[23C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 6
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[24C\e[0;38;5;16;48;5;250m admin \e[0;38;5;16;48;5;246m Investigate accounts (e.g. functionalities under the admin_ namespace) \e[0;38;5;16;48;5;238m \e[A\e[80D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 92
+    content: "\e[?25l\e[?7l\e[0;38;5;231mn\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[24C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 172
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 76
+    content: "\e[?25l\e[?7l\e[25D\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0;38;5;215minvestigate\e[0;38;5;231m admin\e[0m                                                                                                                                                                    \r\e[189C \r\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004l"
+  - delay: 18
+    content: "\e[37mclientVersion: EthereumJS TestRPC/v2.8.0/ethereum-js\e[0m\r\n"
+  - delay: 8
+    content: "\e[?1l\e[6n\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0m \e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0m                                                                                                                                                                                             \r\e[189C \r\e[7A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0;38;5;231;48;5;234mLegions  Verbose   \e[0;38;5;231;48;5;19mOFF\e[0;38;5;231;48;5;234m                                                                                                                                                                       \r\e[189C \r\e[8A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 320
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mi\e[0;38;5;241mnvestigate admin\e[0m \e[0m\r\r\n\e[9C\e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if accounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 48
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mn\e[0m\r\r\n\e[9C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 161
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mv\e[0m\r\r\n\e[10C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 88
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197me\e[0m\r\r\n\e[11C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 222
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197ms\e[0m\r\r\n\e[12C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 91
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mt\e[0m\r\r\n\e[13C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 70
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 40
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mi\e[0m\r\r\n\e[14C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 145
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mg\e[0m\r\r\n\e[15C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 83
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197ma\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[16C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[17C\e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if accounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 124
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mt\e[0m\r\r\n\e[17C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 73
+    content: "\e[?25l\e[?7l\e[10D\e[0;38;5;215minvestigate\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[18C\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 527
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 258
+    content: "\e[?25l\e[?7l\e[0;38;5;231m \e[0m\r\r\n\e[20C\e[0;38;5;16;48;5;250m accounts \e[0;38;5;16;48;5;246m Investigate accounts (e.g. check if accounts are unlocked, etc)        \e[0;38;5;16;48;5;238m \e[0m\r\r\n\e[20C\e[0;38;5;16;48;5;250m admin    \e[0;38;5;16;48;5;246m Investigate accounts (e.g. functionalities under the admin_ namespace) \e[0;38;5;16;48;5;238m \e[0m\r\r\n\e[20C\e[0;38;5;16;48;5;250m sign     \e[0;38;5;16;48;5;246m Investigate signature functionalities                                  \e[0;38;5;16;48;5;238m \e[3A\e[83D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 743
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 287
+    content: "\e[?25l\e[?7l\e[0;38;5;231maccounts\e[0m \e[0m\r\r\n\e[20C\e[0;38;5;231;48;5;102m accounts \e[0;38;5;16;48;5;248m Investigate accounts (e.g. check if accounts are unlocked, etc)        \e[A\e[74D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 415
+    content: "\e[?25l\e[?7l\e[28D\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0;38;5;215minvestigate\e[0;38;5;231m accounts\e[0m                                                                                                                                                                 \r\e[189C \r\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004l"
+  - delay: 28
+    content: "\e[37mBalance of 0xd802f1f519E0F871C6aD07689C09F305F26b1b4a is : 100000000000000000000\e[0m\r\n"
+  - delay: 7
+    content: "\e[37mBalance of 0x14a7bc9a095e8cc4c7CC3BE8F1a7F3702A942538 is : 100000000000000000000\e[0m\r\n"
+  - delay: 7
+    content: "\e[37mBalance of 0x1790A965472dB702d042AB3D5CAa35bC34133293 is : 100000000000000000000\e[0m\r\n"
+  - delay: 5
+    content: "\e[37mBalance of 0xf0ba180BDE68d5cF6c885977DC85f591CBB255a9 is : 100000000000000000000\e[0m\r\n"
+  - delay: 6
+    content: "\e[37mBalance of 0x269734969962453E11E12027642180a9f26b67E4 is : 100000000000000000000\e[0m\r\n"
+  - delay: 5
+    content: "\e[37mBalance of 0x605489943C49F294262DDCBDC8d2BC181D452084 is : 100000000000000000000\e[0m\r\n"
+  - delay: 6
+    content: "\e[37mBalance of 0x5486d7345809d7b68f3aAE773FD67BB2f0c388A3 is : 100000000000000000000\e[0m\r\n"
+  - delay: 5
+    content: "\e[37mBalance of 0xd2706e9dCe4CD06A64E4556254C800e070f42644 is : 100000000000000000000\e[0m\r\n"
+  - delay: 6
+    content: "\e[37mBalance of 0x98ffbeE4A7cf2E47FA343b09E4Bae737e7BcD535 is : 100000000000000000000\e[0m\r\n"
+  - delay: 6
+    content: "\e[37mBalance of 0xf12286180309C4fb7A644f4F08a294a9c2AA23B4 is : 100000000000000000000\e[0m\r\n"
+  - delay: 9
+    content: "\e[33mimportRawKey: local variable 'ww3' referenced before assignment\e[0m\r\n\e[33mnewAccount: local variable 'ww3' referenced before assignment\e[0m\r\n----------------------------------------------------------------\e[0m\r\n\e[?1l\e[6n\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0m \e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0m                                                                                                                                                                                             \r\e[189C \r\e[7A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 14
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 992
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1001
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 999
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1004
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 329
+    content: "\e[?25l\e[?7l\e[0;38;5;215minvestigate\e[0;38;5;231m accounts\e[0m \b\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 368
+    content: "\e[?25l\e[?7l\e[28D\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0;38;5;215minvestigate\e[0;38;5;231m accounts\e[0m                                                                                                                                                                 \r\e[189C \r\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004l"
+  - delay: 26
+    content: "\e[37mBalance of 0xd802f1f519E0F871C6aD07689C09F305F26b1b4a is : 100000000000000000000\e[0m\r\n"
+  - delay: 6
+    content: "\e[37mBalance of 0x14a7bc9a095e8cc4c7CC3BE8F1a7F3702A942538 is : 100000000000000000000\e[0m\r\n"
+  - delay: 7
+    content: "\e[37mBalance of 0x1790A965472dB702d042AB3D5CAa35bC34133293 is : 100000000000000000000\e[0m\r\n"
+  - delay: 6
+    content: "\e[37mBalance of 0xf0ba180BDE68d5cF6c885977DC85f591CBB255a9 is : 100000000000000000000\e[0m\r\n"
+  - delay: 6
+    content: "\e[37mBalance of 0x269734969962453E11E12027642180a9f26b67E4 is : 100000000000000000000\e[0m\r\n"
+  - delay: 6
+    content: "\e[37mBalance of 0x605489943C49F294262DDCBDC8d2BC181D452084 is : 100000000000000000000\e[0m\r\n"
+  - delay: 6
+    content: "\e[37mBalance of 0x5486d7345809d7b68f3aAE773FD67BB2f0c388A3 is : 100000000000000000000\e[0m\r\n"
+  - delay: 6
+    content: "\e[37mBalance of 0xd2706e9dCe4CD06A64E4556254C800e070f42644 is : 100000000000000000000\e[0m\r\n"
+  - delay: 6
+    content: "\e[37mBalance of 0x98ffbeE4A7cf2E47FA343b09E4Bae737e7BcD535 is : 100000000000000000000\e[0m\r\n"
+  - delay: 5
+    content: "\e[37mBalance of 0xf12286180309C4fb7A644f4F08a294a9c2AA23B4 is : 100000000000000000000\e[0m\r\n"
+  - delay: 10
+    content: "\e[33mimportRawKey: local variable 'ww3' referenced before assignment\e[0m\r\n\e[33mnewAccount: local variable 'ww3' referenced before assignment\e[0m\r\n----------------------------------------------------------------\e[0m\r\n\e[?1l\e[6n\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0m \e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0m                                                                                                                                                                                             \r\e[189C \r\e[7A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 111
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 896
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1001
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 313
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mi\e[0;38;5;241mnvestigate accounts\e[0m \e[0m\r\r\n\e[9C\e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if accounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 52
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mn\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[9C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[10C\e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if accounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 155
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mv\e[0m\r\r\n\e[10C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 85
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197me\e[0m\r\r\n\e[11C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 200
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197ms\e[0m\r\r\n\e[12C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 88
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mt\e[0m\r\r\n\e[13C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 93
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mi\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[14C\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[0m\r\r\n\e[15C\e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if accounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 110
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mg\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[15C\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[0m\r\r\n\e[16C\e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if accounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 67
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197ma\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[16C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[?7l\e[0m\r\r\n\e[17C\e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if accounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 139
+    content: "\e[?25l\e[?7l\e[0;38;5;16;48;5;197mt\e[0m\r\r\n\e[17C\e[0m \e[0;38;5;16;48;5;250m investigate \e[0;38;5;16;48;5;246m Investigate further in the node (e.g. check if a\e[Ccounts are unlocked, etc) \e[0;38;5;16;48;5;238m \e[A\e[90D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 66
+    content: "\e[?25l\e[?7l\e[10D\e[0;38;5;215minvestigate\e[0m\r\r\n\e[C\e[0m\e[K\e[A\e[18C\e[?7h\e[0m\e[?12l\e[?25h\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 184
+    content: "\e[?25l\e[?7l\e[0;38;5;231m \e[0m\r\r\n\e[20C\e[0;38;5;16;48;5;250m accounts \e[0;38;5;16;48;5;246m Investigate accounts (e.g. check if accounts are unlocked, etc)        \e[0;38;5;16;48;5;238m \e[0m\r\r\n\e[20C\e[0;38;5;16;48;5;250m admin    \e[0;38;5;16;48;5;246m Investigate accounts (e.g. functionalities under the admin_ namespace) \e[0;38;5;16;48;5;238m \e[0m\r\r\n\e[20C\e[0;38;5;16;48;5;250m sign     \e[0;38;5;16;48;5;246m Investigate signature functionalities                                  \e[0;38;5;16;48;5;238m \e[3A\e[83D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 429
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 437
+    content: "\e[?25l\e[?7l\e[0;38;5;231maccounts\e[0m\r\r\n\e[20C\e[0;38;5;231;48;5;102m accounts \e[0;38;5;16;48;5;248m Investigate accounts (e.g. check if accounts are unlocked, etc)        \e[A\e[74D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 147
+    content: "\e[?25l\e[?7l\e[7D\e[0;38;5;231mdmin\e[0m \e[0m\e[K\e[0m\r\r\n\e[20C\e[0;38;5;16;48;5;250m accounts \e[0;38;5;16;48;5;246m Investigate accounts (e.g. check if accounts are unlocked, etc)        \e[0m\r\r\n\e[20C\e[0;38;5;231;48;5;102m admin    \e[0;38;5;16;48;5;248m Investigate accounts (e.g. functionalities under the admin_ namespace) \e[2A\e[77D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 124
+    content: "\e[?25l\e[?7l\e[5D\e[0;38;5;231msign\e[0m \e[0m\e[K\e[0m\r\r\n\r\r\n\e[20C\e[0;38;5;16;48;5;250m admin    \e[0;38;5;16;48;5;246m Investigate accounts (e.g. functionalities under the admin_ namespace) \e[0m\r\r\n\e[20C\e[0;38;5;231;48;5;102m sign     \e[0;38;5;16;48;5;248m Investigate signature functionalities                                  \e[3A\e[78D\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 289
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 806
+    content: "\e[?25l\e[?7l\e[24D\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0;38;5;215minvestigate\e[0;38;5;231m sign\e[0m                                                                                                                                                                     \r\e[189C \r\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004l"
+  - delay: 28
+    content: "\e[37mSigning Legions Test by 0xd802f1f519E0F871C6aD07689C09F305F26b1b4a : b'|c\\x9a\\x15?0\\x1e\\xdd\\xfd\\xef\\xb0K\\xb0dN\\x89\\xf8\\xc3\\xae\\x95T\\x82].\\x878k\\x96m\\xc6\\xf1\\x95U}\\x91QL\\x12\\xb19:\\xe6\\xe0\\xcb\\xb6\\x11:V\\xb0eC\\xc8\\x85\\x9d\\xf1\\x97!j\\xa7Z\\xf3\\xe9\\x84\\xfd\\x01'\e[0m\r\n"
+  - delay: 5
+    content: "\e[37mSigning Legions Test by 0x14a7bc9a095e8cc4c7CC3BE8F1a7F3702A942538 : b'T\\xdf\\xdd\\ru\\xaf\\xec>\\xa94\\xa1\\xea\\x86\\xc81Pd\\xe5\\xc1\\xc8~\\x90\\xebf9\\xd4\\xd6+\\xf6V{\\x16\\nXZ\\x0e\\xe3\\x9a\\r\\xc2\\xe4g\\xf8\\xeb\\xaa\\x14A\\xaf\\xb9\\xe7#\\xaf\\xfc\\x8a\\xber\\xa6\\x89\\xe8t\\x15BUd\\x00'\e[0m\r\n"
+  - delay: 5
+    content: "\e[37mSigning Legions Test by 0x1790A965472dB702d042AB3D5CAa35bC34133293 : b'M\\x97R\\x8c\\xe2\\x98\\xbf\\xc0\\x8e*\\x01\\xd3\\xd9\\xffD5e\\xe7@.B\\xe9\\xaf\\x99\\x13\\xcf\\xbb\\x8f\\xb0\\xa1b(9\\xfe\\x88\\xc47\\xcd\\x00\\xa4\\x0b\\xdd\\x00\\xd3\\x15\\xe4N\\xd4P\\xbc\\xa3b\\x83\\xb7\\x1e;n\\x97j\\xdaV-\\x1cr\\x01'\e[0m\r\n"
+  - delay: 5
+    content: "\e[37mSigning Legions Test by 0xf0ba180BDE68d5cF6c885977DC85f591CBB255a9 : b'@\\x98N1t\\xbc\\x91\\xcb}\\xaf\\xeeSOQ\\xc4\\x82\\xd4\\x88\\x022\\xdeQ\\xbd1\\xe3\\x0bR\\x87\\xdd\\xee\\x13\\xf0\\x18\\x8c\\xe7~K\\xd03\\x7f$\\x94oJgV\\xee}S}h\\xb7\\xde\\xf6\\x0c\\xa3\\x18.\\xedJ-\\xc7\\x07C\\x01'\e[0m\r\n\e[37mSigning Legions Test by 0x269734969962453E11E12027642180a9f26b67E4 : b'\\x14\\xbd&S\\x8a\\x16\\x07\\x8fth\\xf28S\\xfa\\x80s\\xe2iI\\xe2\\xfe\\xd6\\x9e\\xd2D\\xc0\\x02\\xb3\\xa6.\\x0e\\x88^\\x04\\x17\\x81)Q~g,\\xe1)\\x1d\\xec8_\\xbb\\x06Q6k~S\\xaaU\\xc6\\xcc\\xa8d\\xf2\\xbe\\x0e\\x7f\\x00'\e[0m\r\n"
+  - delay: 5
+    content: "\e[37mSigning Legions Test by 0x605489943C49F294262DDCBDC8d2BC181D452084 : b'!\\x0fOU\\x99\\xb9f#\\x82\\xa6\\x8d\\xcd\\xfbw\\xb5\\xf4\\xf7v\\xf9&O\\xc1R\\xd8\\x145\\xa0\\xb9\\x0f\\xda\\\\\\xe6p\\xe9\\x92\\xa0\\x19\\x14d-Q\\xf3\\xbd\\xa0\\xac\\xcc\\xb0\\xbb\\xa7\\xb3\\xe5\\xf7\\x83$\\x17\\x05\\xc8\\x0f\\x98\\xd6\\xbe\\n\\xb5Y\\x00'\e[0m\r\n"
+  - delay: 5
+    content: "\e[37mSigning Legions Test by 0x5486d7345809d7b68f3aAE773FD67BB2f0c388A3 : b'\\xd3]\\xf6\\x12P\\x99Q\\xaeA\\xb8\\x88Cr\\xfb)\\x19n\\x95)\\xdf\\xda\\x03[\\x8b\\xfd\\xf5\\xf5\\xb6\\tL\\x7f\\x1f1\\xe5`T\\x1e\\xdf:4\\xf4\\xd07.|\\xf6\\xc6\\x06q\\xaa\\xc0\\xc1\\x81P\\xf2\\x17+4\"\\x81,\\xebrL\\x00'\e[0m\r\n"
+  - delay: 5
+    content: "\e[37mSigning Legions Test by 0xd2706e9dCe4CD06A64E4556254C800e070f42644 : b'd\\xcd\\x0f\\xac%\\xb0c|\\xebH\\x8a\\xb2\\xab\\x94\\tA|P\\x80c;\\xc4\\xe3\\xa5\\x0cu\\x88\\xa7\\xc3,K\\xa9[;6W\\xf6r\\x85r\\xd7F\\x03!R\\xc5<3!\\xb3\\x12)j\\x14i\\xccKKm_\\x032\\xde\\xbf\\x01'\e[0m\r\n\e[37mSigning Legions Test by 0x98ffbeE4A7cf2E47FA343b09E4Bae737e7BcD535 : b'Z\\x0fx~\\xd2\\x95\\xdb\\xb6\\xc1\\x9e<\\xc2z\\xaf\\xa2\\xeb\\xda\\xf9\\xb5\\x86\\x1f\\xdc\\xb3]\\xf8\\x8a\\xfer\\x86\\xd5\\x878\\x00\\x07\\x18#\\xa1\\x93R\\xb0*\\xf40j\\xec\\xaf\\xcc\\xeb\\xc9(\\x99\\x82\\xa6\\x1e\\x05J+k\\x81G\\xe5\\x1eR\\xef\\x00'\e[0m\r\n"
+  - delay: 5
+    content: "\e[37mSigning Legions Test by 0xf12286180309C4fb7A644f4F08a294a9c2AA23B4 : b'\\xaf<\\x82\\xef\\xf9G\\xf6\\x1f\\xf0-(\\xe4N\\xb0\\xd8\\xb2\\x04\\\\\\x033\\x82\\xde\\xf3\\xd3\\xf4\\xf7\\x8d\\xe1\\xf9\\x87\\xa5\\x8a>\\xa4?\\xf3\\xb8\\xcc9\\xea\\xcaO\\xec\\xba\\x07\\x0c\\xd8oB\\xb0\\xa4\\xe8\\x87Y\\xe4\\xf6T\\xa8^\\x02\\x16\\xfb\\xb5P\\x00'\e[0m\r\n\e[?1l\e[6n\e[?2004h\e[?25l\e[0m\e[?7l\e[0m\e[J\e[0;38;5;95mdaniel\e[0;38;5;34m> \e[0m \e[0m\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\r\r\n\e[0m                                                                                                                                                                                             \r\e[189C \r\e[7A\e[8C\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 13
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 993
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1001
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1001
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1001
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 999
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1004
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1002
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 999
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 1004
+    content: "\e[?25l\e[?7l\e[?7h\e[0m\e[?12l\e[?25h"
+  - delay: 347
+    content: "\e[?25l\e[?7l\e[8D\e[0m\e[J\e[0;38;5;102mdaniel>                                                                                                                                                                                      \r\e[189C \r\e[0m\r\r\n\e[J\e[?7h\e[0m\e[?12l\e[?25h\e[?2004l"
+  - delay: 85
+    content: "\e]0;daniel@cola:~/Development/github.com/ConsenSys/Legions/demo\a(venv) [daniel@cola demo]$ "
+  - delay: 1154
+    content: "logout\r\n"
